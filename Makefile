@@ -12,7 +12,7 @@ SHELL = /usr/bin/env bash -o pipefail
 .SHELLFLAGS = -ec
 CONTROLLER_GEN = /go/bin/controller-gen
 OPENAPI_GEN = /go/bin/openapi-gen
-REPO=github.com/nevidanniu/sample-apispec/api
+REPO=github.com/nevidanniu/sample-apispec
 
 ##@ General
 
