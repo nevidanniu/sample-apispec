@@ -24,7 +24,7 @@ cd client-go
 rm -rf applyconfigurations ssp listers informers
 
 # should be tag, but sha commit also works
-# 16d3e97 is sha commit https://github.com/nevidanniu/sample-apispec/commit/16d3e97b4371a4c51591ae652e77858d7d547977
+# 6be1838 is sha commit 
 go get -x -u github.com/nevidanniu/sample-apispec@6be1838
 
 # from go.mod
@@ -38,3 +38,6 @@ export API_TAG=v0.0.0-20250416125607-6be1838903ad
 /go/bin/informer-gen --input-dirs $( paste -d, -s "/go/pkg/mod/github.com/nevidanniu/sample-apispec@$API_TAG/modules.txt" ) --output-base "." --trim-path-prefix "github.com/nevidanniu/sample-apispec/client-go" --versioned-clientset-package github.com/nevidanniu/sample-apispec/client-go/ssp --listers-package github.com/nevidanniu/sample-apispec/client-go/listers --output-package "github.com/nevidanniu/sample-apispec/client-go/informers" --go-header-file hack/boilerplate.go.txt -v 2
 ```
 
+# how to use
+
+[sample code](usage/main.go)
