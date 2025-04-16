@@ -1,0 +1,2 @@
+core/v1alpha1
+ldap/v1alpha1
