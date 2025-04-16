@@ -1,4 +1,4 @@
-module sample-apispec
+module github.com/nevidanniu/sample-apispec
 
 go 1.23.4
 
