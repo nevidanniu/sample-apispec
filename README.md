@@ -1,3 +1,21 @@
+# structure
+CRD specs:
+```
+core/v1alpha1
+ldap/v1alpha1
+```
+kubernetes code-generator binaries docker:
+```
+docker/Dockerfile
+```
+script parts:
+```
+Makefile
+groups.txt - path to CRD specs
+modules.txt - go import paths for CRD specs
+hack/boilerplate.go.txt - boilerplate text for generated code
+```
+
 # build code-generator
 ```bash
 docker buildx build --progress=plain  -f docker/Dockerfile -t code-generator:latest .
